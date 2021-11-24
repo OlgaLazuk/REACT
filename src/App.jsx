@@ -9,8 +9,8 @@ const App = () => {
   ];
   return (
     <div className="container">
-      <Header todos={todos.text} />
-      <Main todos={todos.id} todos={todos.isActive} />
+      <Header />
+      <Main todos={todos} />
     </div>
   );
 };

@@ -4,9 +4,10 @@ export const Todoitem = (props) => {
       <input
         type="checkbox"
         className="form-check-input"
-        value={props.todos.isActive}
+        value={props.keyProps.isActive}
       />
-      <button className="btn-close" value={props.todos.id} />
+      <p>{props.keyProps.text}</p>
+      <button className="btn-close" value={props.keyProps.id} />
     </div>
   );
 };

@@ -1,9 +1,12 @@
-export const Header = (props) => {
-  // console.log(props);
+export const Header = () => {
   return (
     <header className="d-flex gap-3 my-5">
-      <input type="text" className="form-control" placeholder=" ... " />
-      <p>{props.todos.text}</p>
+      <button className="btn btn-primary">Delete All</button>
+      <input
+        type="text"
+        className="form-control"
+        placeholder="Enter todo ... "
+      />
       <button className="btn btn-primary">Add</button>
     </header>
   );

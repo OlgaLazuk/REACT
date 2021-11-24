@@ -1,11 +1,11 @@
 import { Todoitem } from "./Todoitem";
 
 export const Main = (props) => {
-  const items = [1, 2, 3];
+  console.log(props.todos);
   return (
     <div className="container">
-      {items.map((item) => (
-        <Todoitem />
+      {props.todos.map((todo) => (
+        <Todoitem keyProps={todo} />
       ))}
     </div>
   );
