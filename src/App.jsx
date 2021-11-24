@@ -1,15 +1,21 @@
 import { Header } from "./components/Header";
 import { Main } from "./components/Main";
+import { useState } from "react";
 
 const App = () => {
+  const [inputValue, setImputValue] = useState("");
+
+  const handleInput = (event) => {
+    setImputValue(event.target.value);
+  };
+
   const todos = [
-    { id: 1, text: "Number 1", isActive: false },
-    { id: 2, text: "Number 2", isActive: false },
-    { id: 3, text: "Number 3", isActive: false },
+    { id: 1, text: "Todo text", isActive: false },
+    { id: 2, text: "Todo text", isActive: false },
   ];
   return (
     <div className="container">
-      <Header />
+      <Header onClick={handleInput} value={inputValue} />
       <Main todos={todos} />
     </div>
   );
