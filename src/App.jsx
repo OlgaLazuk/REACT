@@ -14,7 +14,7 @@ const App = () => {
     { id: 2, text: "Todo text", isActive: false },
   ];
   return (
-    <div className="container">
+    <div className="container border-elements">
       <Header onClick={handleInput} value={inputValue} />
       <Main todos={todos} />
     </div>

@@ -8,7 +8,27 @@
 
 .btn {
   background-color: #18e7cf;
+  color: #5e6179;
+  border: 2px solid #000;
+  border-radius: 7px;
 }
-/* .btn:hover {
-    background-color: #18e7cf;
-} */
+
+.border-elements {
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+.container {
+  background-color: #d5d5d5;
+}
+
+.container-todo-text {
+  display: block;
+  background-color: #fff;
+  border-radius: 7px;
+}
+
+.input-date {
+  border: none;
+  border-radius: 7px;
+}
