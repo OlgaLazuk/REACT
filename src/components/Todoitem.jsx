@@ -1,28 +1,13 @@
-import { v4 as uuidv4 } from "uuid";
+
 import { useState } from "react";
-export const Todoitem = (props) => {
-  const [isCompleted, setCompleted] = useState(true);
+export const Todoitem = (props, anAdd, todos, onDelete) => {
+ 
+  const [isCompleted, setCompleted] = useState(false);
 
   const toggleCheckbox = () => {
     setCompleted(!isCompleted);
   };
-  const [todos, setTodos] = useState([]);
-  const onDelete = () => {
-    setTodos();
-  };
-
-  const anAdd = () => {
-    setTodos([
-      ...todos,
-      {
-        id: uuidv4(),
-        text: "ololo",
-        isCompleted: false,
-        date: new Date().toLocaleDateString(),
-      },
-    ]);
-  };
-
+  
   return (
     <div className="border-elements d-flex gap-3  my-3 alert">
       <div
